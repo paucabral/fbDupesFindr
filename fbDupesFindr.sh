@@ -11,7 +11,7 @@ printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]Facebook Duplicates Finder\e[0m\n"
 echo "# Author: @paucabral"
 echo "# Note: This is a derivative of @linux_choice's userrecon."
 echo ""
-echo "Instructions: Enter username under the format <firstname>.<lastname>. This script will list up to 1000 duplicate accounts based from this format. A common format of duplicates under the pattern www.facebook.com/firstname.lastname.<digits>".
+echo "Instructions: Enter username under the format <firstname>.<lastname>. This script will list up to 10000 duplicate accounts based from this format. A common format of duplicates under the pattern www.facebook.com/firstname.lastname.<digits>".
 echo ""
 echo ""
 }
@@ -54,7 +54,7 @@ printf "\e[1;93mNot Found!\e[0m\n"
 fi
 
 ## Dupes
-for i in {0..1000}
+for i in {0..9999}
 
 do
 printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Facebook $i: \e[0m"
